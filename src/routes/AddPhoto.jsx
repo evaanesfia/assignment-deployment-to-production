@@ -33,6 +33,9 @@ const AddPhoto = () => {
     } else {
       navigate("/photos");
     }
+  })
+  .catch((err) => {
+    setError(err);
   });
 } 
 
