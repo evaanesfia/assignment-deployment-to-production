@@ -25,7 +25,7 @@ const EditPhoto = () => {
   })
   .then((data)=> data.json())
   .then((json) => {
-    if (json.error != undefined) {
+    if (json.error !== undefined) {
       alert(json.error);
     } else {
       navigate("/photos");

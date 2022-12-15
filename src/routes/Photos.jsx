@@ -14,7 +14,7 @@ const Photos = () => {
     await fetch(`https://gallery-app-server.vercel.app/photos/${id}`,{
       method: "DELETE" 
     })
-    setPhotos(photos.filter((photo) => photo.id != id))
+    setPhotos(photos.filter((photo) => photo.id !== id))
   };
 
   useEffect(() => {
